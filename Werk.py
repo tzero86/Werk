@@ -2,6 +2,7 @@ from sys import exit
 import pyautogui
 import sys
 import time
+import os
 
 # Helper functions
 
@@ -33,6 +34,7 @@ def draw(size, iterations, channel=sys.stdout, waittime=0.2):
 
 
 try:
+	os.system('cls' if os.name == 'nt' else 'clear')
 	print(logo)
 	print('[*] Werk is starting, press CRTL+C at any time to stop the script')
 	while True:
